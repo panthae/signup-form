@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(''./yuru//Norsebold.otf) format('opentype')
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Norse',sans-serif;
+    font-size: 3rem;
+    color: antiquewhite;
+}
