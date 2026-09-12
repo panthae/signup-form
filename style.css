@@ -1,17 +1,129 @@
-@font-face {
-    font-family: 'Norse';
-    src: url(''./yuru//Norsebold.otf) format('opentype')
-    font-weight: 700;
-    font-style: normal;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     
 }
 
-* {
-    box-sizing: border-box;
+body {
+    background-color: aqua;
+    color: black;
+    border: 1px solid red;
+    
+    
+}
+
+#container {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
 }
 
 .logo {
-    font-family: 'Norse',sans-serif;
-    font-size: 3rem;
-    color: antiquewhite;
+    position: relative;
+    width: 35%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    background-image: url('leave\ copy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo_image {
+    position: absolute;
+    top: 180px;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 10px;
+    
+}
+
+.logo_image img{
+    height: 90px;
+    width: auto;
+}
+
+.logo_image span {
+    color: aliceblue;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.link {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.link a {
+    color: aliceblue;
+}
+
+.kkk {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9fafb;
+}
+
+.text {
+    padding: 40px 50px;
+    max-width: 750px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #111827;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+
+form h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    padding: 0 50px;
+    margin-bottom: 20px;
+}
+
+.main_font {
+    background-color: #ffff;
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    margin-bottom: 30px;
+    max-width: 700px;
+
+}
+
+.font {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 200px;
+}
+
+.font label {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #4b5563;
+
+}
+
+.font input {
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 3px 5px;
 }
